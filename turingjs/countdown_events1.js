@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     // Manually set the next major event date and time
-    const eventDate = new Date("2026-03-17T10:00:00");
+    const eventDate = new Date("2026-03-23T09:30:00+05:30");
   
     // Update countdown every second
     const countdownInterval = setInterval(() => {

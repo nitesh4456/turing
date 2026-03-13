@@ -69,39 +69,84 @@ $('.slider_active').owlCarousel({
 
 
 
+// // review-active
+// var brand_active = $('.brand_active');
+// if(brand_active.length){
+//   brand_active.owlCarousel({
+//   loop:true,
+//   margin:0,
+//   autoplay:true,
+//   navText:['<i class="ti-angle-left"></i>','<i class="ti-angle-right"></i>'],
+//   nav:false,
+//   dots:false,
+//   autoplayHoverPause: true,
+//   // autoplaySpeed: 800,
+//   autoplayTimeout:2000,   // time between slides (smaller = faster)
+//   autoplaySpeed:800,      // transition speed
+//   smartSpeed:800,         // smoother faster animation
+//   center: false,
+//     responsive:{
+//         0:{
+//             items:1,
+//             nav:false
+//         },
+//         767:{
+//             items:3
+//         },
+//         992:{
+//             items:4
+//         },
+//         1200:{
+//             items:4
+//         },
+//         1500:{
+//             items:5
+//         }
+//     }
+//   });
+//   // restart autoplay after hover
+//   brand_active.mouseleave(function(){
+//     brand_active.trigger('play.owl.autoplay');
+//   });
+// }
+
 // review-active
 var brand_active = $('.brand_active');
+
 if(brand_active.length){
   brand_active.owlCarousel({
-  loop:true,
-  margin:0,
-  autoplay:true,
-  navText:['<i class="ti-angle-left"></i>','<i class="ti-angle-right"></i>'],
-  nav:false,
-  dots:false,
-  autoplayHoverPause: true,
-  autoplaySpeed: 800,
-  center: false,
+    loop:true,
+    margin:0,
+    autoplay:true,
+    navText:['<i class="ti-angle-left"></i>','<i class="ti-angle-right"></i>'],
+    nav:false,
+    dots:false,
+    autoplayHoverPause:true,
+    autoplayTimeout:3000,
+    autoplaySpeed:1000,
+    smartSpeed:1000,
+    center:false,
+
     responsive:{
-        0:{
-            items:1,
-            nav:false
-        },
-        767:{
-            items:3
-        },
-        992:{
-            items:4
-        },
-        1200:{
-            items:4
-        },
-        1500:{
-            items:5
-        }
+        0:{ items:1, nav:false },
+        767:{ items:3 },
+        992:{ items:4 },
+        1200:{ items:4 },
+        1500:{ items:5 }
     }
   });
+
+  // restart autoplay when mouse leaves
+  brand_active.on('mouseleave', function(){
+      brand_active.trigger('play.owl.autoplay',[2000]);
+  });
+
+  // pause when hover
+  brand_active.on('mouseenter', function(){
+      brand_active.trigger('stop.owl.autoplay');
+  });
 }
+
 
 
 // for filter
