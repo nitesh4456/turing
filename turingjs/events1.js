@@ -293,164 +293,91 @@
                 cashPrize: "₹1K",
                 registrationLink: "https://tr.ee/B20RjB"
             },
-            
-            
-        {
+
+
+
+
+
+
+
+            {
                 id: 9,
-                title: "IOT and Cloud Computing",
-                type: "workshop",
-                date: "2024-02-29",
-                time: "10:00 AM - 12:00 PM, 1:30 PM - 3:30 PM",
+                title: "Intro. to Data Analysis",
+                type: "webinar",
+                date: "2026-02-15",
+                time: "3:00 PM - 4:00 PM",
+                duration: "1 day",
+                venue: "Zoom Meet (Online)",
+                address: "Acharya Narendra Dev College, University of Delhi",
+                description: "A technical talk on Introduction to Data Analysis, discussing the emerging challenges in the field. Organized by the Turing Society in  collaboration with Geek for Geeks",
+                image: "./Assets/geek.jpeg",
+                speakers: [
+                    { name: "", role: "", image: "" }
+                ],
+                status: "past",
+                registrationOpen: false,
+                featured: true,
+            },
+            
+            {
+                id: 10,
+                title: "Present and Future of IT careers",
+                type: "seminar",
+                date: "2026-02-13",
+                time: "12:00 PM - 1:00 PM",
                 duration: "1 day",
                 venue: "Conference Room",
                 address: "Acharya Narendra Dev College, University of Delhi",
-                description:
-                    "A one-day workshop covering the fundamentals of IoT and Cloud Computing, conducted under the DBT Star Status College Scheme 2023-24.",
-                image: "./Assets/1.jpg",
+                description: "A seminar on Present and Future of IT careers.",
+                image: "./Assets/landmark.JPG",
                 speakers: [
-                    { name: "Dr. Nikhil Rajput", role: "Assistant Professor, Ramanujan College, DU", image: "https://source.unsplash.com/random/100x100/?man" },
+                    { name: "", role: "", image: "" }
                 ],
                 status: "past",
                 registrationOpen: false,
                 featured: true,
             },
-        {
-                id: 10,
-                title: "Hands on work experience in Blockchain",
-                type: "workshop",
-                date: "2023-10-31",
-                time: "01:00 PM - 03:00 PM",
-                duration: "2 hours",
-                venue: "Conference Room",
-                address: "Acharya Narendra Dev College, University of Delhi",
-                description:
-                    "An insightful seminar on navigating cybersecurity challenges in the digital world, featuring discussions on the latest trends and threats.",
-                image: "./Assets/2.jpg",
-                speakers: [
-                    { name: "Dr. Ihitiram Raza Khan", role: "Professor,Dept. Computer Sc & Engineering Jamia Hamdard Deemed University , New delhi", image: "https://source.unsplash.com/random/100x100/?man"  },
-                ],
-                status: "past",
-                registrationOpen: false,
-                featured: true,
-            },
+
             {
                 id: 11,
-                title: "Navigating the Digital Frontier & Cyber Security Awareness",
-                type: "seminar",
-                date: "2023-10-31",
-                time: "01:00 PM",
-                duration: "N/A",
-                venue: "Seminar Hall",
+                title: "Basics of Financial Literacy",
+                type: "financial talk",
+                date: "2026-02-03",
+                time: "6:00 PM - 8:00 PM",
+                duration: "1 day",
+                venue: "Google Meet (Online)",
                 address: "Acharya Narendra Dev College, University of Delhi",
-                description:
-                    "A seminar on digital transformation and cybersecurity awareness under the aegis of the DBT Star College scheme 2023-24.",
-                image: "./Assets/3.jpg",
+                description: "A financial talk on the topic of Basics of Financial Literacy and Financial Planning with an expert in the realtrd field.",
+                image: "./Assets/financial_talk.png",
                 speakers: [
-                    { name: "Dr. Mohit Soni", role: "Founder and CEO, WhiteLint", image: "https://source.unsplash.com/random/100x100/?man" }
+                    { name: "", role: "", image: "" }
                 ],
                 status: "past",
                 registrationOpen: false,
-                featured: false,
+                featured: true,
             },
-            
+
             {
                 id: 12,
-                title: "Use of Machine Learning in Video Streaming",
-                type: "technical talk",
-                date: "2024-03-17",
-                time: "11:00 AM - 01:00 PM",
-                duration: "2 hours",
-                venue: "Google Meet (Online)",
-                address: "Virtual Event",
-                description:
-                    "A tech talk on how Machine Learning is revolutionizing video streaming, organized by the Turing Society under the aegis of the DBT Star College scheme 2023-24.",
-                image: "./Assets/5.jpg",
+                title: "Hela CrosRoads",
+                type: "seminar",
+                date: "2025-09-24",
+                time: "1:00 PM - 3:00 PM",
+                duration: "1 day",
+                venue: "Conference Room",
+                address: "Acharya Narendra Dev College, University of Delhi",
+                description: "A seminar on BlockChain & d-App development, discussing the emerging challenges in the field. Organized by the Turing Society in  collaboration with Meetup series Hela Crossroads India 2025",
+                image: "./Assets/hela.jpeg",
                 speakers: [
-                    { name: "Mr. Sudesh Chandel", role: "Principal Data Engineer, AT&T India Pvt. Ltd, Hyderabad, India", image: "https://source.unsplash.com/random/100x100/?engineer" }
+                    { name: "", role: "", image: "" }
                 ],
                 status: "past",
                 registrationOpen: false,
                 featured: true,
             },
+
             {
                 id: 13,
-                title: "Quantum Computing and Cybersecurity: A New Era of Challenges",
-                type: "technical talk",
-                date: "2024-03-16",
-                time: "1:00 PM - 3:00 PM",
-                duration: "2 hours",
-                venue: "Google Meet (Online)",
-                address: "Virtual Event",
-                description:
-                    "A technical talk on Quantum Computing and Cybersecurity, discussing the emerging challenges in the field. Organized by the Turing Society under the aegis of the DBT Star College scheme 2023-24.",
-                image: "./Assets/6.jpg",
-                speakers: [
-                    { name: "Dr. Nihar Rajan Roy", role: "Associate Professor, Dept. of Computer Science & Engineering, Sharda University, Greater Noida", image: "https://source.unsplash.com/random/100x100/?professor" }
-                ],
-                status: "past",
-                registrationOpen: false,
-                featured: true,
-            },
-            
-            {
-                id: 14,
-                title: "Data Dive: Surfing the Waves of AI Innovation",
-                type: "technical talk",
-                date: "2024-02-25",
-                time: "11:00 AM - 01:00 PM",
-                duration: "2 hours",
-                venue: "Online",
-                address: "Google Meet",
-                description:
-                    "A technical talk on AI innovations and data science trends, featuring insights from industry experts.",
-                image: "./Assets/7.jpg",
-                speakers: [
-                    { name: "Ms. Aakanksha Rehan", role: "Senior Data Scientist, Capgemini IT Pvt. Ltd.", image: "https://source.unsplash.com/random/100x100/?woman" }
-                ],
-                status: "past",
-                registrationOpen: false,
-                featured: true,
-            },
-            {
-                id: 15,
-                title: "Developing an Excellent Research Paper & Publication Ethics",
-                type: "technical talk",
-                date: "2024-03-22",
-                time: "01:30 PM - 03:30 PM",
-                duration: "2 hours",
-                venue: "Google Meet (Online)",
-                address: "Virtual Event",
-                description:
-                    "A webinar on writing high-quality research papers while adhering to original research and publication ethics, organized by the Turing Society under the aegis of the DBT Star College scheme 2023-24.",
-                image: "./Assets/4.jpg",
-                speakers: [
-                    { name: "Dr. Narendra Nath Dalei", role: "Associate Professor, Department of Economics, Central University of Himachal Pradesh", image: "https://source.unsplash.com/random/100x100/?professor" }
-                ],
-                status: "past",
-                registrationOpen: false,
-                featured: true,
-            },
-            {
-                id: 16,
-                title: "Natural Language Processing Workshop",
-                type: "workshop",
-                date: "2024-11-12 to 2024-11-13",
-                time: "10:00 AM onwards",
-                duration: "2 days",
-                venue: "Conference Room",
-                address: "College Campus, Building 3",
-                description:
-                    "An inter-college NLP workshop covering Sentiment Analysis, Text Representation, Document Clustering, and Language Modeling with hands-on sessions.",
-                image: "./Assets/8.png",
-                speakers: [
-                    { name: "Experts from University", role: "NLP Specialists", image: "https://source.unsplash.com/random/100x100/?man" }
-                ],
-                status: "past",
-                registrationOpen: false,
-                featured: true,
-            },
-            {
-                id: 18,
                 title: "Real Time 3D",
                 type: "seminar",
                 date: "2025-02-21",
@@ -459,7 +386,7 @@
                 venue: "Conference Room",
                 address: "Acharya Narendra Dev College, University of Delhi",
                 description: "A seminar on real-time 3D technology organized by the Department of Computer Science, Turing Society.",
-                image: "./Assets/real_time_3d.png",
+                image: "./Assets/real_time_3d.webp",
                 speakers: [
                     { 
                         name: "Anupama Jain", 
@@ -471,9 +398,162 @@
                 registrationOpen: false,
                 featured: true,
                 qrCodeLink: "ADD_REGISTRATION_LINK_HERE"
+            },
+            {
+                id: 14,
+                title: "Natural Language Processing Workshop",
+                type: "workshop",
+                date: "2024-11-12",
+                time: "10:00 AM onwards",
+                duration: "2 days",
+                venue: "Conference Room",
+                address: "College Campus, Building 3",
+                description:
+                    "An inter-college NLP workshop covering Sentiment Analysis, Text Representation, Document Clustering, and Language Modeling with hands-on sessions.",
+                image: "./Assets/8.webp",
+                speakers: [
+                    { name: "Experts from University", role: "NLP Specialists", image: "https://source.unsplash.com/random/100x100/?man" }
+                ],
+                status: "past",
+                registrationOpen: false,
+                featured: true,
+            },
+            {
+                id: 15,
+                title: "Developing an Excellent Research Paper & Publication Ethics",
+                type: "webinar",
+                date: "2024-03-22",
+                time: "01:30 PM - 03:30 PM",
+                duration: "2 hours",
+                venue: "Google Meet (Online)",
+                address: "Virtual Event",
+                description:
+                    "A webinar on writing high-quality research papers while adhering to original research and publication ethics, organized by the Turing Society under the aegis of the DBT Star College scheme 2023-24.",
+                image: "./Assets/4.webp",
+                speakers: [
+                    { name: "Dr. Narendra Nath Dalei", role: "Associate Professor, Department of Economics, Central University of Himachal Pradesh", image: "https://source.unsplash.com/random/100x100/?professor" }
+                ],
+                status: "past",
+                registrationOpen: false,
+                featured: true,
+            },
+
+            {
+                id: 16,
+                title: "Use of Machine Learning in Video Streaming",
+                type: "technical talk",
+                date: "2024-03-17",
+                time: "11:00 AM - 01:00 PM",
+                duration: "2 hours",
+                venue: "Google Meet (Online)",
+                address: "Virtual Event",
+                description:
+                    "A tech talk on how Machine Learning is revolutionizing video streaming, organized by the Turing Society under the aegis of the DBT Star College scheme 2023-24.",
+                image: "./Assets/5.webp",
+                speakers: [
+                    { name: "Mr. Sudesh Chandel", role: "Principal Data Engineer, AT&T India Pvt. Ltd, Hyderabad, India", image: "https://source.unsplash.com/random/100x100/?engineer" }
+                ],
+                status: "past",
+                registrationOpen: false,
+                featured: true,
+            },
+
+            {
+                id: 17,
+                title: "Quantum Computing and Cybersecurity: A New Era of Challenges",
+                type: "technical talk",
+                date: "2024-03-16",
+                time: "1:00 PM - 3:00 PM",
+                duration: "2 hours",
+                venue: "Google Meet (Online)",
+                address: "Virtual Event",
+                description:
+                    "A technical talk on Quantum Computing and Cybersecurity, discussing the emerging challenges in the field. Organized by the Turing Society under the aegis of the DBT Star College scheme 2023-24.",
+                image: "./Assets/6.webp",
+                speakers: [
+                    { name: "Dr. Nihar Rajan Roy", role: "Associate Professor, Dept. of Computer Science & Engineering, Sharda University, Greater Noida", image: "https://source.unsplash.com/random/100x100/?professor" }
+                ],
+                status: "past",
+                registrationOpen: false,
+                featured: true,
+            },
+        {
+                id: 18,
+                title: "IOT and Cloud Computing",
+                type: "workshop",
+                date: "2024-02-29",
+                time: "10:00 AM - 12:00 PM, 1:30 PM - 3:30 PM",
+                duration: "1 day",
+                venue: "Conference Room",
+                address: "Acharya Narendra Dev College, University of Delhi",
+                description:
+                    "A one-day workshop covering the fundamentals of IoT and Cloud Computing, conducted under the DBT Star Status College Scheme 2023-24.",
+                image: "./Assets/1.webp",
+                speakers: [
+                    { name: "Dr. Nikhil Rajput", role: "Assistant Professor, Ramanujan College, DU", image: "https://source.unsplash.com/random/100x100/?man" },
+                ],
+                status: "past",
+                registrationOpen: false,
+                featured: true,
+            },
+            {
+                id: 19,
+                title: "Data Dive: Surfing the Waves of AI Innovation",
+                type: "technical talk",
+                date: "2024-02-25",
+                time: "11:00 AM - 01:00 PM",
+                duration: "2 hours",
+                venue: "Online",
+                address: "Google Meet",
+                description:
+                    "A technical talk on AI innovations and data science trends, featuring insights from industry experts.",
+                image: "./Assets/7.webp",
+                speakers: [
+                    { name: "Ms. Aakanksha Rehan", role: "Senior Data Scientist, Capgemini IT Pvt. Ltd.", image: "https://source.unsplash.com/random/100x100/?woman" }
+                ],
+                status: "past",
+                registrationOpen: false,
+                featured: true,
+            },
+        {
+                id: 20,
+                title: "Hands on work experience in Blockchain",
+                type: "workshop",
+                date: "2023-10-31",
+                time: "01:00 PM - 03:00 PM",
+                duration: "2 hours",
+                venue: "Conference Room",
+                address: "Acharya Narendra Dev College, University of Delhi",
+                description:
+                    "An insightful seminar on navigating cybersecurity challenges in the digital world, featuring discussions on the latest trends and threats.",
+                image: "./Assets/2.webp",
+                speakers: [
+                    { name: "Dr. Ihitiram Raza Khan", role: "Professor,Dept. Computer Sc & Engineering Jamia Hamdard Deemed University , New delhi", image: "https://source.unsplash.com/random/100x100/?man"  },
+                ],
+                status: "past",
+                registrationOpen: false,
+                featured: true,
+            },
+            {
+                id: 21,
+                title: "Navigating the Digital Frontier & Cyber Security Awareness",
+                type: "seminar",
+                date: "2023-10-31",
+                time: "01:00 PM",
+                duration: "N/A",
+                venue: "Seminar Hall",
+                address: "Acharya Narendra Dev College, University of Delhi",
+                description:
+                    "A seminar on digital transformation and cybersecurity awareness under the aegis of the DBT Star College scheme 2023-24.",
+                image: "./Assets/3.webp",
+                speakers: [
+                    { name: "Dr. Mohit Soni", role: "Founder and CEO, WhiteLint", image: "https://source.unsplash.com/random/100x100/?man" }
+                ],
+                status: "past",
+                registrationOpen: false,
+                featured: false,
             }
-            
-            
+
     ]
     
     // Function to render events
