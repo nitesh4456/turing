@@ -1,0 +1,589 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Trace Overflow | Overload++ 2026</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon.ico" />
+    <link rel="manifest" href="img/favicon_io/site.webmanifest" />
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/gijgo.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <style>
+        .event-details-area {
+            padding: 60px 0;
+        }
+
+.slider_bg_traceoverflow{
+    background-size: 140% !important;   /* zoom */
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 400px;
+}
+
+.slider_bg_traceoverflow.overlay::before{
+    background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.15) 0%,
+        rgba(0,0,0,0.35) 100%
+    ) !important;
+}
+        .single_event_detail {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .single_event_detail h4 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .single_event_detail p {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            padding: 5px 0;
+        }
+    </style>
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7VES1HDSSF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7VES1HDSSF');
+</script>
+
+<body>
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+          <!-- Full-Screen Loader -->
+  <div class="loader-overlay">
+    <div class="loader"></div>
+</div>
+
+    <!-- header-start -->
+    <header>
+        <div class="header-area ">
+            <div id="sticky-header" class="main-header-area">
+                <div class="container">
+                    <div class="header_bottom_border">
+                        <div class="row align-items-center">
+                            <div class="col-xl-4 col-lg-4">
+                                <div class="logo">
+                                    <a href="index.html">
+                                        <img src="img/Turing logo.png" alt="" style="width: 117px;">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xl-8 col-lg-8">
+                                <div class="main-menu  d-none d-lg-block">
+                                    <nav>
+                                        <ul id="navigation">
+                                            <li><a href="index.html">home</a></li>
+                                            <li><a href="Events.html">Events</a></li>
+                                            <li><a href="about.html">About</a></li>
+                                            <li><a href="teams.html">Teams</a></li>
+                                            <li><a href="overloadpp.html">Overload++</a></li>
+                                            <li><a href="Gallerycard.html">Gallery</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="mobile_menu d-block d-lg-none"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header-end -->
+
+    <!-- slider_area_start -->
+    <div class="slider_area">
+        <div class="single_slider  d-flex align-items-center slider_bg_traceoverflow overlay">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-xl-12">
+                        <!--<div class="slider_text text-center">
+                            <h3 class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".4s">TRACE OVERFLOW</h3>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- slider_area_end -->
+
+    <!-- about_area_start  -->
+    <div class="about_area black_bg">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section_title text-center mb-80">
+                        <h3 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">About TRACE OVERFLOW</h3>
+                            <p class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s">
+                            TraceOverflow is an indoor, sequential problem-solving event designed specifically for computer science students.
+                            Participants solve a chain of technical tasks across various CS domains where the output of one step becomes the input for the next.
+                            The event tests logical thinking, debugging ability, and structured problem-solving.
+                            </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container event-details-area black_bg">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="section_title text-center mb-5">
+                            <h3 class="text-white">Event Details</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <!-- Event Info -->
+                    <div class="col-md-6">
+                        <div class="single_event_detail">
+                            <h4 class="text-white"><i class="fa fa-calendar"></i> Date</h4>
+                            <p class="text-muted">17 March 2026</p>
+                        </div>
+                        <div class="single_event_detail">
+                            <h4 class="text-white"><i class="fa fa-clock-o"></i> Time</h4>
+                            <p class="text-muted">11:00 AM - 12:30 PM</p>
+                        </div>
+                        <div class="single_event_detail">
+                            <h4 class="text-white"><i class="fa fa-map-marker"></i> Venue</h4>
+                            <p class="text-muted">Conference Room</p>
+                        </div>
+                    </div>
+
+                    <!-- Rules -->
+                    <div class="col-md-6">
+                        <h4 class="text-white"><i class="fa fa-list"></i> Rules & Guidelines</h4>
+                        <ul class="text-muted">
+                        <li>Participants must solve problems in the specified sequence.</li>
+                        <li>The output of the previous step is mandatory to proceed to the next task.</li>
+                        <li>Use of the internet is permitted.</li>
+                        <li>Collaboration or sharing answers is not allowed.</li>
+                        <li>Hints will be provided by organizers for participants who are unable to proceed.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Coordinators -->
+                <div class="row justify-content-center mt-4">
+                    <div class="col-lg-8">
+                        <h4 class="text-white text-center"><i class="fa fa-user"></i> Coordinators</h4>
+                        <div class="row text-center text-muted justify-content-center">
+                            <div class="col-md-4">
+                                <p>Ishan Srivastava</p>
+                                <p><i class="fa fa-phone"></i> 8756919009</p>
+                            </div>
+                            <!--<div class="col-md-4">
+                                <p>-</p>
+                                <p><i class="fa fa-phone"></i> -</p>
+                            </div>
+                            <div class="col-md-4">
+                                <p>-</p>
+                                <p><i class="fa fa-phone"></i> -</p>
+                            </div>-->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Register Button -->
+                <div class="row justify-content-center mt-5">
+                    <div class="col-lg-6 text-center">
+                        <a href="https://linktr.ee/Turing_Society?utm_source=linktree_profile_share&ltsid=f14a1b6a-6d64-4dab-b6c0-368ab4116e5e"
+                            class="btn btn-primary btn-lg">Register Now</a>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="container event-details-area black_bg">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="section_title text-center mb-5">
+                            <h3 class="text-white">Format & Winning Criteria</h3>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+<h4 class="text-white">Format</h4>
+<ul class="text-muted">
+<li>On-spot and digital problem solving event.</li>
+<li>Participants must solve technical tasks sequentially.</li>
+<li>Each answer unlocks the next step.</li>
+</ul>
+</div>
+
+                <div class="col-md-6">
+                <h4 class="text-white">Device & Connectivity</h4>
+                <ul class="text-muted">
+                <li>Participants may use personal laptops or mobile devices.</li>
+                <li>Internet access is permitted.</li>
+                </ul>
+                </div>
+
+                <div class="col-md-6">
+                <h4 class="text-white">Scoring System</h4>
+                <ul class="text-muted">
+                <li>No point-based scoring system.</li>
+                </ul>
+                </div>
+
+                <div class="col-md-6">
+                <h4 class="text-white">Winning Criteria</h4>
+                <ul class="text-muted">
+                <li>The first participant to reach and correctly solve the final step will be declared the winner.</li>
+                </ul>
+                </div>
+
+
+                    <!--<div class="col-md-6">
+                        <h4 class="text-white">Match Structure</h4>
+                        <ul class="text-muted">
+                            <li>Each match consists of multiple rounds.</li>
+                            <li>Standard matches: Best of 3 rounds (First to win 2 rounds wins the match).</li>
+                            <li>Final match: Best of 5 rounds (First to win 3 rounds wins the match).</li>
+                            <li>Each round has a 99-second timer.</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="col-md-6">
+                        <h4 class="text-white">How to Win a Round</h4>
+                        <ul class="text-muted">
+                            <li>Completely deplete the opponent’s health bar before time runs out.</li>
+                            <li>If the timer reaches zero, the player with the higher remaining health wins the round.
+                            </li>
+                            <li>If a Draw occurs (both players have equal health when time expires), an additional
+                                single round is played to decide the winner.</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h4 class="text-white">How to Win a Match</h4>
+                        <ul class="text-muted">
+                            <li>Win 2 out of 3 rounds in standard matches.</li>
+                            <li>Win 3 out of 5 rounds in the Final match.</li>
+                        </ul>
+
+                        <br>
+
+                        <h4 class="text-white">How to Win the Tournament</h4>
+                        <ul class="text-muted">
+                            <li>The tournament follows a knockout bracket format.</li>
+                            <li>Each match winner advances to the next stage.</li>
+                            <li>The last player remaining in the bracket is crowned the Tekken Showdown Champion.</li>
+                        </ul>
+                    </div>
+
+                </div>-->
+
+                <!-- Tournament Format -->
+
+                <!-- Match Structure -->
+
+                <!-- Winning Criteria -->
+
+            </div>
+
+
+        </div>
+    </div>
+    <!-- about_area_end  -->
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- brand_area_start  -->
+    <div class="brand_area black_bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section_title text-center mb-80">
+                        <h4 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">Our Collaborations</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="brand_wrap">
+                        <div class="brand_active owl-carousel">
+                            <div class="single_brand text-center">
+                                <a href="https://gdg-andc.vercel.app/"><img src="img/brand/1.png" alt=""></a>
+                            </div>
+                            <div class="single_brand text-center">
+                                <a href="https://stractsbyriya.com/"><img src="img/brand/2.png" alt=""></a>
+                            </div>
+                            <div class="single_brand text-center">
+                                <a href="https://arenakalkaji.com/"><img src="img/brand/3.png" alt=""></a>
+                            </div>
+                            <div class="single_brand text-center">
+                                <a href="https://www.iihmrdelhi.edu.in/"><img src="img/brand/4.png" alt=""></a>
+                            </div>
+                            <div class="single_brand text-center">
+                                <a href="https://www.instagram.com/du_campus_diary/"><img src="img/brand/5.jpg"
+                                        alt=""></a>
+                            </div>
+                            <div class="single_brand text-center">
+                                <a href="https://www.theeducationtree.com/"><img src="img/brand/6.jpg" alt=""></a>
+                            </div>
+                            <div class="single_brand text-center">
+                                <a href="https://www.instagram.com/du.fest/"><img src="img/brand/7.jpg" alt=""></a>
+                            </div>
+                            <div class="single_brand text-center">
+                                <a href="https://www.instagram.com/du_fest_/"><img src="img/brand/8.jpg" alt=""></a>
+                            </div>
+                            <div class="single_brand text-center">
+                                <a href="https://www.instagram.com/duconnection/"><img src="img/brand/9.jpg" alt=""></a>
+                            </div>
+                            <div class="single_brand text-center">
+                                <a href="https://www.instagram.com/andcians.du/"><img src="img/brand/10.jpg" alt=""></a>
+                            </div>
+                            <div class="single_brand text-center">
+                                <a href="https://interviewbuddy.net/"><img src="img/brand/11.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- brand_area_end  -->
+
+
+
+
+    <section id="sponsors" class="section-with-bg wow fadeInUp">
+
+        <div class="container">
+            <div class="section-header">
+                <h2>More Events</h2>
+            </div>
+
+            <div class="row no-gutters sponsors-wrap clearfix">
+
+                <div class="col-lg-3 col-md-4 col-xs-6">
+                    <a href="Techquest.html">
+                        <div class="sponsor-logo">
+                            <img src="img/sponsors/1.webp" class="img-fluid" alt="">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-xs-6">
+                    <a href="Hackzzle.html">
+                        <div class="sponsor-logo">
+                            <img src="img/sponsors/2.webp" class="img-fluid" alt="">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-xs-6">
+                    <a href="TechWar.html">
+                        <div class="sponsor-logo">
+                            <img src="img/sponsors/3.webp" class="img-fluid" alt="">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-xs-6">
+                    <a href="Coderush.html">
+                        <div class="sponsor-logo">
+                            <img src="img/sponsors/4.webp" class="img-fluid" alt="">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-xs-6">
+                    <a href="BugHunt.html">
+                        <div class="sponsor-logo">
+                            <img src="img/sponsors/5.webp" class="img-fluid" alt="">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-xs-6">
+                    <a href="The lost Artifact.html">
+                        <div class="sponsor-logo">
+                            <img src="img/sponsors/7.webp" class="img-fluid" alt="">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-xs-6">
+                    <a href="Sketchbytes.html">
+                        <div class="sponsor-logo">
+                            <img src="img/sponsors/8.webp" class="img-fluid" alt="">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-xs-6">
+                    <a href="BGMI.html">
+                        <div class="sponsor-logo">
+                            <img src="img/sponsors/9.webp" class="img-fluid" alt="">
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- footer_start  -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Address -->
+            <div class="footer-column">
+                <h3>
+                    <img src="img/Footer/location.png" class="icon" alt="Address" />
+                    Address
+                </h3>
+                <p>
+                    Acharya Narendra Dev College,<br />University of Delhi<br />Govindpuri,
+                    Kalkaji 110019
+                </p>
+            </div>
+
+            <!-- Contact Us -->
+            <div class="footer-column">
+                <h3>
+                    <img src="img/Footer/Call.png" class="icon" alt="Address" />Contact
+                    Us
+                </h3>
+                <p>Phone:<a href="tel:+91 74283 85311">+91 74283 85311</a></p>
+                <p>Email:<a href="mailto:turingandcs@gmail.com.com">turingandcs@gmail.com</a></p>
+            </div>
+
+            <!-- Opening Hours -->
+            <div class="footer-column">
+                <h3>
+                    <img src="img/Footer/clock.png" class="icon" alt="Address" />Opening
+                    Hours
+                </h3>
+                <p>Mon-Sat: 11:00 A.M. - 8:00 P.M.</p>
+                <p>Sunday: Closed</p>
+            </div>
+
+            <!-- Follow Us -->
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <div class="social-icons-footer">
+                    <a href="https://www.instagram.com/turing.andc?igsh=Z2dqNzlydWR1MjR2"><img
+                            src="img/Footer/Instagram.png" class="fa fa-instagram" alt="Address" />
+                    </a>
+                    <a href="#"><img src="img/Footer/Linkedin.png" class="fa fa-linkedin" alt="Address" /></a>
+                </div>
+            </div>
+
+            <!-- College and University Logos Section -->
+            <div class="footer-column">
+                <h3>Our Affiliation</h3>
+                <div class="logo-container">
+                    <a href="https://www.andcollege.du.ac.in/#"><img src="img/Footer/ANDC.png"
+                            alt="Acharya Narendra Dev College Logo" class="footer-logo" /></a>
+                    <a href="https://www.du.ac.in/"><img src="img/Footer/DU.png" alt="University of Delhi Logo"
+                            class="footer-logo" /></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Footer -->
+        <div class="footer-bottom">
+            &copy; Copyright Turing ANDC UoD. All Rights Reserved
+        </div>
+    </footer>
+    <!-- footer_end  -->
+
+    <!-- JS here -->
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/ajax-form.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/scrollIt.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/gijgo.min.js"></script>
+    <script src="js/nice-select.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/tilt.jquery.js"></script>
+    <script src="js/plugins.js"></script>
+
+
+
+    <!--contact js-->
+    <script src="js/contact.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/mail-script.js"></script>
+
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

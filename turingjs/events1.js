@@ -665,7 +665,13 @@
               5: "Techquest.html",
               6:"TechWar.html",
               7:"Tekken.html",
-              8:"The lost Artifact.html"
+              8:"The lost Artifact.html",
+              100: "TraceOverflow.html",
+              101: "TechQuizz.html",
+              102: "HuntX.html",
+              103: "FallGuys.html",
+              104: "FlagTheCode.html",
+              105: "FreeFire.html"
              
             };
             
