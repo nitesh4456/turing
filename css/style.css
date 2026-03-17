@@ -1603,22 +1603,25 @@ h3 {
   background-image: url(../img/banner/tekken.webp);
 }
 .slider_bg_traceoverflow{
-  background-image: url("../Assets/Overload 2026/TRACE_OVERFLOW.png");
+  background-image: url(../img/banner/trace.png);
 }
 .slider_bg_techquizz{
-  background-image: url("../Assets/Overload 2026/TECH_QUIZZ_main.jpeg");
+  background-image: url(../img/banner/tech_quiz.png);
 }
 .slider_bg_huntx{
-  background-image: url("../Assets/Overload 2026/HUNTX_main.png");
+  background-image: url(../img/banner/hunt.png);
 }
 .slider_bg_fallguys{
-  background-image: url("../Assets/Overload 2026/FALL_GUYS_main.jpeg");
+  background-image: url(../img/banner/fall_guys.png);
 }
 .slider_bg_flagthecode{
-  background-image: url("../Assets/Overload 2026/CATCH_THE_FLAG_main.jpeg");
+  background-image: url(../img/banner/flag.png);
 }
 .slider_bg_freefire{
-  background-image: url("../Assets/Overload 2026/FREE_FIRE_main.png");
+  background-image: url(../img/banner/free_fire.png);
+}
+.slider_bg_tekken26{
+  background-image: url(../img/banner/tekken.png);
 }
 
 /* line 7, ../../Arafath/CL/December/236. Event-02/HTML/scss/_slider.scss */

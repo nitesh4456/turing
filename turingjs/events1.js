@@ -77,44 +77,26 @@
                 cashPrize: "Worth of 1k",
                 registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLScKNzYYT2RtOiFg_Sudr9bMEiR6YihLKYQvxrU72xWxiLfysw/viewform"
             },
-            // {
-            //     id: 102,
-            //     title: "HuntX",
-            //     type: "overload",
-            //     date: "2026-03-17",
-            //     time: "12:00 PM - 1:30 PM",
-            //     duration: "1 day",
-            //     venue: "College Campus",
-            //     address: "Acharya Narendra Dev College, University of Delhi",
-            //     description: "Treasure Hunt competition. Max entries: 10 Teams (2 players each). Prize: Winner - Rs. 700 + Certificate, Runner up - Certificate.",
-            //     image: "./Assets/Overload 2026/HUNTX.png",
-            //     speakers: [],
-            //     status: "upcoming",
-            //     registrationOpen: true,
-            //     featured: true,
-            //     cashPrize: "Rs. 700",
-            //     registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfxCJimIOzWsQGZZYliQMI0icV8TgUY0PSd7YJLAkRKIN07sg/viewform?usp=header"
-            // },
             {
-                id: 103,
-                title: "Fall Guys",
+                id: 102,
+                title: "HuntX",
                 type: "overload",
                 date: "2026-03-23",
-                time: "12:30 PM - 2:00 PM",
+                time: "12:00 PM - 1:30 PM",
                 duration: "1 day",
-                venue: "Conference Room",
+                venue: "College Campus",
                 address: "Acharya Narendra Dev College, University of Delhi",
-                description: "PC Gaming tournament. Max entries: 60. Prize: Winner - Rs. 1000 + Certificate, Runner up - Certificate.",
-                image: "./Assets/Overload 2026/fall_guys.jpeg",
+                description: "Treasure Hunt competition. Max entries: 10 Teams (2 players each). Prize: Winner - Rs. 700 + Certificate, Runner up - Rs. 300 + Certificate.",
+                image: "./Assets/Overload 2026/HuntX.png",
                 speakers: [],
                 status: "upcoming",
                 registrationOpen: true,
                 featured: true,
                 cashPrize: "Rs. 1000",
-                registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSe2jwjvlqeSlXnD-qdx2YLOMD6pR4qyBNLPYx6UOAKxrfuLqw/viewform"
+                registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfxCJimIOzWsQGZZYliQMI0icV8TgUY0PSd7YJLAkRKIN07sg/viewform"
             },
             {
-                id: 104,
+                id: 103,
                 title: "Flag The Code",
                 type: "overload",
                 date: "2026-03-23",
@@ -132,26 +114,25 @@
                 registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSdDq4l8PHflYpjsAlaJYa90cXUwJURGqJq_TYd0SKxP7FuTdA/viewform"
             },
             {
-                id: 105,
-                title: "Free Fire",
+                id: 104,
+                title: "Fall Guys",
                 type: "overload",
                 date: "2026-03-23",
-                time: "2:30 PM - 4:00 PM",
+                time: "12:30 PM - 2:00 PM",
                 duration: "1 day",
-                venue: "Room 09",
+                venue: "Conference Room",
                 address: "Acharya Narendra Dev College, University of Delhi",
-                description: "Mobile Gaming tournament. Max entries: 48. Prize: Winner - Rs. 1000 + Certificate, Runner up - Certificate.",
-                image: "./Assets/Overload 2026/free_fire.jpeg",
+                description: "PC Gaming tournament. Max entries: 60. Prize: Winner - Rs. 1000 + Certificate, Runner up - Certificate.",
+                image: "./Assets/Overload 2026/fall_guys.jpeg",
                 speakers: [],
                 status: "upcoming",
                 registrationOpen: true,
                 featured: true,
                 cashPrize: "Rs. 1000",
-                registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfYkK8vMNAghG6s-syj4zhxxcZLHUa59wXArpsepKLbPZA6Sg/viewform"
+                registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSe2jwjvlqeSlXnD-qdx2YLOMD6pR4qyBNLPYx6UOAKxrfuLqw/viewform"
             },
-
             {
-                id: 106,
+                id: 105,
                 title: "Tekken Showdown",
                 type: "overload",
                 date: "2026-03-23",
@@ -168,7 +149,24 @@
                 cashPrize: "Rs. 1000",
                 registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSecpt07a3jlJpg4RspCjMfoGpvmi35wRkUzdtduScLL6lKYmA/viewform"
             },
-
+            {
+                id: 106,
+                title: "Free Fire",
+                type: "overload",
+                date: "2026-03-23",
+                time: "2:30 PM - 4:00 PM",
+                duration: "1 day",
+                venue: "Room 09",
+                address: "Acharya Narendra Dev College, University of Delhi",
+                description: "Mobile Gaming tournament. Max entries: 48. Prize: Winner - Rs. 1000 + Certificate, Runner up - Certificate.",
+                image: "./Assets/Overload 2026/free_fire.jpeg",
+                speakers: [],
+                status: "upcoming",
+                registrationOpen: true,
+                featured: true,
+                cashPrize: "Rs. 1000",
+                registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfYkK8vMNAghG6s-syj4zhxxcZLHUa59wXArpsepKLbPZA6Sg/viewform"
+            },
 
             {
                 id: 1,
@@ -687,12 +685,14 @@
               6:"TechWar.html",
               7:"Tekken.html",
               8:"The lost Artifact.html",
+
               100: "TraceOverflow.html",
               101: "TechQuizz.html",
               102: "HuntX.html",
-              103: "FallGuys.html",
-              104: "FlagTheCode.html",
-              105: "FreeFire.html"
+              103: "FlagTheCode.html",
+              104: "FallGuys.html",
+              105: "Tekken26.html",
+              106: "FreeFire.html"
              
             };
             

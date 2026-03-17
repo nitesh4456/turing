@@ -98,18 +98,49 @@
         <div class="portfolio-menu mt-2 mb-4">
             <ul>
                 <li class="btn btn-outline-light active" style="margin: 3px;" data-filter="*">All</li>
-                <li class="btn btn-outline-light" style="margin: 3px;" data-filter=".orientation">Orientation 2024-25</li>
-                <li class="btn btn-outline-light" style="margin: 3px;" data-filter=".orientation25">Orientation 2025-26</li>
+                <!-- <li class="btn btn-outline-light" style="margin: 3px;" data-filter=".orientation">Orientation 2024-25</li>
+                <li class="btn btn-outline-light" style="margin: 3px;" data-filter=".orientation25">Orientation 2025-26</li> -->
+
+                <!-- Orientation Dropdown -->
+                <!-- <li class="list-inline-item dropdown orientation-dropdown btn btn-outline-light " style="margin: 3px;"> -->
+                <li class="list-inline-item dropdown filter-dropdown btn btn-outline-light" style="margin: 3px;">
+                    <!-- <span class="orientation-btn">Orientation</span> -->
+                    Orientation
+
+                    <ul class="year-dropdown">
+                        <li data-filter=".orientation">2024-25</li>
+                        <li data-filter=".orientation25">2025-26</li>
+                    </ul>
+                </li>
+
                 <li class="btn btn-outline-light" style="margin: 3px;" data-filter=".Bootcamp">Bootcamp</li>
+                <!-- <li class="btn btn-outline-light text" style="margin: 3px;" data-filter=".Freshers2024">Freshers 2024-25
+                </li>
+                <li class="btn btn-outline-light text" style="margin: 3px;" data-filter=".Freshers2025">Freshers 2025-26 -->
+                
+                <!-- </li> -->
+                <li class="list-inline-item dropdown filter-dropdown btn btn-outline-light" style="margin: 3px;">
+                    <!-- <span class="orientation-btn">Freshers</span> -->
+                    Freshers
+                    <ul class="year-dropdown">
+                        <li data-filter=".Freshers2024">2024-25</li>
+                        <li data-filter=".Freshers2025">2025-26</li>
+                    </ul>
+                </li>
+                <!-- <li class="btn btn-outline-light text" style="margin: 3px;" data-filter=".Farewell2024">Farewell 2023-24
+                </li>
+                <li class="btn btn-outline-light text" style="margin: 3px;" data-filter=".Farewell2025">Farewell 2024-25 -->
+                <!-- </li> -->
+                <li class="list-inline-item dropdown filter-dropdown btn btn-outline-light" style="margin: 3px;">
+                    <!-- <span class="orientation-btn">Orientation</span> -->
+                    Farewell
+
+                    <ul class="year-dropdown">
+                        <li data-filter=".Farewell2024">2023-24</li>
+                        <li data-filter=".Farewell2025">2024-25</li>
+                    </ul>
+                </li>
                 <li class="btn btn-outline-light text" style="margin: 3px;" data-filter=".rtd">Real-Time 3D</li>
-                <li class="btn btn-outline-light text" style="margin: 3px;" data-filter=".Freshers2024">Freshers 2024-25
-                </li>
-                <li class="btn btn-outline-light text" style="margin: 3px;" data-filter=".Freshers2025">Freshers 2025-26
-                </li>
-                <li class="btn btn-outline-light text" style="margin: 3px;" data-filter=".Farewell2024">Farewell 2023-24
-                </li>
-                <li class="btn btn-outline-light text" style="margin: 3px;" data-filter=".Farewell2025">Farewell 2024-25
-                </li>
                 <li class="btn btn-outline-light" style="margin: 3px;" data-filter=".HelaWorkshop">Hela Workshop</li>
                 <li class="btn btn-outline-light" style="margin: 3px;" data-filter=".overload">Overload++ 2025</li>
             </ul>
@@ -133,8 +164,8 @@
                 </a>
             </div>
             <div class="item rtd col-lg-3 col-md-4 col-6 col-sm">
-                <a href="Assets/Real Time 3D/1.webp" class="fancylight popup-btn" data-fancybox-group="light">
-                    <img class="img-fluid" src="Assets/Real Time 3D/1.webp" alt="">
+                <a href="Assets/Real Time 3D/1.JPG" class="fancylight popup-btn" data-fancybox-group="light">
+                    <img class="img-fluid" src="Assets/Real Time 3D/1.JPG" alt="">
                 </a>
             </div>
             <div class="item Freshers2024 col-lg-3 col-md-4 col-6 col-sm">
@@ -288,11 +319,11 @@
                     <img class="img-fluid" src="Assets/Orientation 2025-2026/Img4.jpeg" alt="">
                 </a>
             </div>
-            <div class="item Bootcamp col-lg-3 col-md-4 col-6 col-sm">
+            <!-- <div class="item Bootcamp col-lg-3 col-md-4 col-6 col-sm">
                 <a href="Assets/Bootcamp/4.jpg" class="fancylight popup-btn" data-fancybox-group="light">
                     <img class="img-fluid" src="Assets/Bootcamp/4.jpg" alt="">
                 </a>
-            </div>
+            </div> -->
             <div class="item rtd col-lg-3 col-md-4 col-6 col-sm">
                 <a href="Assets/Real Time 3D/4.webp" class="fancylight popup-btn" data-fancybox-group="light">
                     <img class="img-fluid" src="Assets/Real Time 3D/4.webp" alt="">
@@ -304,8 +335,8 @@
                 </a>
             </div>
             <div class="item Freshers2025 col-lg-3 col-md-4 col-6 col-sm">
-                <a href="Assets/Freshers 2025/Img4.jpeg" class="fancylight popup-btn" data-fancybox-group="light">
-                    <img class="img-fluid" src="Assets/Freshers 2025/Img4.jpeg" alt="">
+                <a href="Assets/Freshers 2025/Img4.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                    <img class="img-fluid" src="Assets/Freshers 2025/Img4.jpg" alt="">
                 </a>
             </div>
             <div class="item Farewell2024 col-lg-3 col-md-4 col-6 col-sm">
@@ -390,8 +421,8 @@
                 </a>
             </div>
             <div class="item orientation25 col-lg-3 col-md-4 col-6 col-sm">
-                <a href="Assets/Orientation 2025-2026/Img6.jpeg" class="fancylight popup-btn" data-fancybox-group="light">
-                    <img class="img-fluid" src="Assets/Orientation 2025-2026/Img6.jpeg" alt="">
+                <a href="Assets/Orientation 2025-2026/Img6.JPG" class="fancylight popup-btn" data-fancybox-group="light">
+                    <img class="img-fluid" src="Assets/Orientation 2025-2026/Img6.JPG" alt="">
                 </a>
             </div>
             <div class="item Bootcamp col-lg-3 col-md-4 col-6 col-sm">
@@ -437,21 +468,21 @@
 
             <!-- 7 -->
 
-            <div class="item orientation col-lg-3 col-md-4 col-6 col-sm">
+            <!-- <div class="item orientation col-lg-3 col-md-4 col-6 col-sm">
                 <a href="Assets/orientation/7.jpg" class="fancylight popup-btn" data-fancybox-group="light">
                     <img class="img-fluid" src="Assets/orientation/7.jpg" alt="">
                 </a>
-            </div>
+            </div> -->
             <div class="item orientation25 col-lg-3 col-md-4 col-6 col-sm">
                 <a href="Assets/Orientation 2025-2026/Img7.jpeg" class="fancylight popup-btn" data-fancybox-group="light">
                     <img class="img-fluid" src="Assets/Orientation 2025-2026/Img7.jpeg" alt="">
                 </a>
             </div>
-            <div class="item Bootcamp col-lg-3 col-md-4 col-6 col-sm">
+            <!-- <div class="item Bootcamp col-lg-3 col-md-4 col-6 col-sm">
                 <a href="Assets/Bootcamp/7.jpg" class="fancylight popup-btn" data-fancybox-group="light">
                     <img class="img-fluid" src="Assets/Bootcamp/7.jpg" alt="">
                 </a>
-            </div>
+            </div> -->
             <div class="item rtd col-lg-3 col-md-4 col-6 col-sm">
                 <a href="Assets/Real Time 3D/7.webp" class="fancylight popup-btn" data-fancybox-group="light">
                     <img class="img-fluid" src="Assets/Real Time 3D/7.webp" alt="">
@@ -531,8 +562,8 @@
                 </a>
             </div>
             <div class="item HelaWorkshop col-lg-3 col-md-4 col-6 col-sm">
-                <a href="Assets/Hela/Img8.jpeg" class="fancylight popup-btn" data-fancybox-group="light">
-                    <img class="img-fluid" src="Assets/Hela/Img8.jpeg" alt="">
+                <a href="Assets/Hela/Img8.JPG" class="fancylight popup-btn" data-fancybox-group="light">
+                    <img class="img-fluid" src="Assets/Hela/Img8.JPG" alt="">
                 </a>
             </div>
             <div class="item overload col-lg-3 col-md-4 col-6 col-sm">
@@ -651,8 +682,8 @@
                 </a>
             </div>
             <div class="item rtd col-lg-3 col-md-4 col-6 col-sm">
-                <a href="Assets/Real Time 3D/11.jpeg" class="fancylight popup-btn" data-fancybox-group="light">
-                    <img class="img-fluid" src="Assets/Real Time 3D/11.jpeg" alt="">
+                <a href="Assets/Real Time 3D/11.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                    <img class="img-fluid" src="Assets/Real Time 3D/11.jpg" alt="">
                 </a>
             </div>
             <div class="item Freshers2025 col-lg-3 col-md-4 col-6 col-sm">
@@ -704,8 +735,8 @@
                 </a>
             </div>
             <div class="item overload col-lg-3 col-md-4 col-6 col-sm">
-                <a href="Assets/Overload/Img12.jpeg" class="fancylight popup-btn" data-fancybox-group="light">
-                    <img class="img-fluid" src="Assets/Overload/Img12.jpeg" alt="">
+                <a href="Assets/Overload/Img12.JPG" class="fancylight popup-btn" data-fancybox-group="light">
+                    <img class="img-fluid" src="Assets/Overload/Img12.JPG" alt="">
                 </a>
             </div>
 

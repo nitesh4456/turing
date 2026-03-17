@@ -8,12 +8,18 @@
     font-family: "Oxanium";
 }
 
-body{
+/* body{
     background-image: url(../img/teamsbg.webp);
     background-size: cover;
 
+} */
+body {
+    background-image: url(../img/teamsbg.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;   /* ⭐ IMPORTANT */
 }
-
 
 .item img {
     width: 300px;
@@ -48,12 +54,69 @@ body{
     /*width:100%;*/
 /* }  */
 
-.portfolio-item .item {
-    /*width:303px;*/
+/* .portfolio-item .item {
+    /*width:303px;
     float: left;
+    margin-bottom: 10px;
+} */
+
+.portfolio-item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio-item .item {
     margin-bottom: 10px;
 }
 
 html{
     scroll-behavior: smooth;
+}
+
+
+/* .orientation-dropdown {
+    position: relative;
+    cursor: pointer;
+} */
+.filter-dropdown {
+    position: relative;
+    cursor: pointer;
+}
+
+/* .year-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    padding: 0;
+    margin: 5px 0 0 0;
+    list-style: none;
+    min-width: 150px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+} */
+
+.year-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    color: #000;        /* ⭐ FIX */
+    padding: 0;
+    margin: 5px 0 0 0;
+    list-style: none;
+    min-width: 150px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    z-index: 9999;      /* ⭐ FIX */
+}
+
+.year-dropdown li {
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+.year-dropdown li:hover {
+    background: #f2f2f2;
 }
