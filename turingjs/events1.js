@@ -348,7 +348,7 @@
                 venue: "Conference Room",
                 address: "Acharya Narendra Dev College, University of Delhi",
                 description: "A seminar on Present and Future of IT careers.",
-                image: "./Assets/landmark.JPG",
+                image: "./Assets/landmark.jpg",
                 speakers: [
                     { name: "", role: "", image: "" }
                 ],
@@ -367,7 +367,7 @@
                 venue: "Google Meet (Online)",
                 address: "Acharya Narendra Dev College, University of Delhi",
                 description: "A financial talk on the topic of Basics of Financial Literacy and Financial Planning with an expert in the realtrd field.",
-                image: "./Assets/financial_talk.JPG",
+                image: "./Assets/financial_talk.jpg",
                 speakers: [
                     { name: "", role: "", image: "" }
                 ],
