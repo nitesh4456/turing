@@ -367,7 +367,7 @@
                 venue: "Google Meet (Online)",
                 address: "Acharya Narendra Dev College, University of Delhi",
                 description: "A financial talk on the topic of Basics of Financial Literacy and Financial Planning with an expert in the realtrd field.",
-                image: "./Assets/financial_talk.png",
+                image: "./Assets/financial_talk.JPG",
                 speakers: [
                     { name: "", role: "", image: "" }
                 ],
