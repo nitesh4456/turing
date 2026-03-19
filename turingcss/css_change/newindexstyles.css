@@ -1,0 +1,46 @@
+@media (max-width: 426px) {
+  .combined-heading h1 {
+    font-size: 1.7rem !important;
+  }
+
+  .slider_text h1{
+    padding-top: 50px !important;
+    font-size: 2rem !important;
+  }
+  .slider_text h2{
+    /* padding-top: 20px !important; */
+    font-size: 1rem !important;
+  }
+  .section-title{
+    font-size: 2rem !important;
+  }
+  .event-name{
+    padding: 15px 10px 10px 10px !important;
+  }
+  .event-name p{
+    font-size: 12px !important;
+  }
+  #combined-section{
+    padding: 10px 10px 10px 10px !important;
+  }
+  .event-title{
+    font-size: 25px !important;
+  }
+  .event-subtitle{
+    font-size: 20px !important;
+  }
+  .event-img{
+    height: 250px !important;
+    padding-left:  10px !important;
+    padding-right:  10px !important;
+    border-radius: 20px !important;
+  }
+  .live{
+    /* font-size: 20px !important; */
+    color: red !important;
+    font-size: 1.8rem !important;
+  }
+  .view{
+    font-weight: bold !important;
+  }
+}

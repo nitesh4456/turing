@@ -27,6 +27,10 @@
   <link rel="manifest" href="./Assets/favicon_io/site.webmanifest" />
   <link rel="stylesheet" href="css/footer.css">
 
+  <link rel="stylesheet" href="turingcss/css_change/newindexstyles.css">
+
+  <link rel="stylesheet" href="pop-up-msg/pop.css">
+
 
 
 
@@ -48,7 +52,16 @@
   <div class="loader-overlay">
     <div class="loader"></div>
 </div> -->
+  <!-- welcome msg
+  <div id="welcomePopup">
+  <div class="popup-box">
+    <h1>Welcome</h1>
+    <h2 id="daysText"></h2>
+    <button onclick="closePopup()">Enter</button>
+  </div>
+</div> -->
   <!-- Loader -->
+   
 <div class="loader-overlay" id="loader">
 
   <div class="loader-title">Turing Society</div>
@@ -260,7 +273,7 @@
   </section>
 
   <section class="upcoming-events">
-    <h2><span class="red">Live</span> &nbsp;Registrations</h2>
+    <h2><span class="red live">Live</span> &nbsp;Registrations</h2>
     <div class="container">
       <div class="row justify-content-center">
         
@@ -269,7 +282,7 @@
             <div class="upcoming-event-img"
               style="background-image: url('./Assets/Overload\ 2026/trace_overflow.jpeg'); background-size: contain; background-repeat: no-repeat;">
             </div>
-            <a href="TraceOverflow.html" class="btn btn-custom d-block">View Details</a>
+            <a href="TraceOverflow.html" class="btn btn-custom d-block view">View Details</a>
           </div>
         </div>
 
@@ -279,7 +292,7 @@
             <div class="upcoming-event-img"
               style="background-image: url('./Assets/Overload\ 2026/fall_guys.jpeg'); background-size: contain; background-repeat: no-repeat;">
             </div>
-            <a href="FallGuys.html" class="btn btn-custom d-block">View Details</a>
+            <a href="FallGuys.html" class="btn btn-custom d-block view">View Details</a>
           </div>
         </div>
 
@@ -289,7 +302,7 @@
             <div class="upcoming-event-img"
               style="background-image: url('./Assets/Overload\ 2026/free_fire.jpeg'); background-size: contain; background-repeat: no-repeat;">
             </div>
-            <a href="FreeFire.html" class="btn btn-custom d-block">View Details</a>
+            <a href="FreeFire.html" class="btn btn-custom d-block view ">View Details</a>
           </div>
         </div>
 
@@ -425,6 +438,9 @@
 
 
   <script src="js/main.js"></script>
+  
+  <script src="pop-up-msg/pop.js"></script>
+
 
 </body>
 
