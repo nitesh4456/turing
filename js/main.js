@@ -382,40 +382,113 @@ dots:false,
 
 
 
-  document.addEventListener("DOMContentLoaded", function () {
-    const loaderOverlay = document.querySelector(".loader-overlay");
+//   document.addEventListener("DOMContentLoaded", function () {
+//     const loaderOverlay = document.querySelector(".loader-overlay");
 
-    function imagesLoaded() {
-        const images = document.images;
-        let loaded = 0;
+//     function imagesLoaded() {
+//         const images = document.images;
+//         let loaded = 0;
 
-        for (let img of images) {
-            if (img.complete) {
-                loaded++;
-            } else {
-                img.onload = () => {
-                    loaded++;
-                    if (loaded === images.length) {
-                        hideLoader();
-                    }
-                };
-                img.onerror = () => {
-                    loaded++;
-                    if (loaded === images.length) {
-                        hideLoader();
-                    }
-                };
-            }
-        }
+//         for (let img of images) {
+//             if (img.complete) {
+//                 loaded++;
+//             } else {
+//                 img.onload = () => {
+//                     loaded++;
+//                     if (loaded === images.length) {
+//                         hideLoader();
+//                     }
+//                 };
+//                 img.onerror = () => {
+//                     loaded++;
+//                     if (loaded === images.length) {
+//                         hideLoader();
+//                     }
+//                 };
+//             }
+//         }
 
-        if (loaded === images.length) {
-            hideLoader();
-        }
+//         if (loaded === images.length) {
+//             hideLoader();
+//         }
+//     }
+
+//     function hideLoader() {
+//         loaderOverlay.style.display = "none"; // Hide loader overlay
+//     }
+
+//     imagesLoaded();
+// });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const loader = document.getElementById("loader");
+  const bar = document.getElementById("bar");
+  const percent = document.getElementById("percent");
+  const status = document.getElementById("status");
+
+  const images = document.images;
+  const totalImages = images.length;
+
+  let loaded = 0;
+
+  const messages = [
+    "Preparing experience",
+    "Loading events",
+    "Rendering visuals",
+    "Almost ready"
+  ];
+
+  function updateProgress() {
+    let progress = totalImages === 0 ? 100 : (loaded / totalImages) * 100;
+
+    bar.style.width = progress + "%";
+    percent.textContent = Math.floor(progress) + "%";
+
+    let msgIndex = Math.min(
+      messages.length - 1,
+      Math.floor(progress / 25)
+    );
+    status.textContent = messages[msgIndex];
+
+    if (loaded === totalImages) {
+      finishLoader();
     }
+  }
 
-    function hideLoader() {
-        loaderOverlay.style.display = "none"; // Hide loader overlay
+  function finishLoader() {
+    loader.style.opacity = "0";
+    loader.style.transform = "scale(1.05)";
+
+    setTimeout(() => {
+      loader.style.display = "none";
+      document.body.classList.remove("loading");
+    }, 800);
+  }
+
+  // Prevent scroll while loading
+  document.body.classList.add("loading");
+
+  if (totalImages === 0) {
+    loaded = 1;
+    updateProgress();
+    return;
+  }
+
+  for (let img of images) {
+    if (img.complete) {
+      loaded++;
+      updateProgress();
+    } else {
+      img.onload = () => {
+        loaded++;
+        updateProgress();
+      };
+      img.onerror = () => {
+        loaded++;
+        updateProgress();
+      };
     }
-
-    imagesLoaded();
+  }
 });
+
+window.addEventListener("load", finishLoader);
