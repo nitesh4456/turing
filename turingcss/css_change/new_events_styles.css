@@ -1,0 +1,99 @@
+
+@media (max-width: 426px) {
+    .slider_area .single_slider{ /*poster height*/
+        height: 60vh !important;
+    }
+
+    .event-details-area{
+        padding-top: 50px !important;
+        padding-bottom: 0px !important;
+    }
+
+    .col-lg-10 .section_title{
+        margin-bottom: 20px !important; 
+    }
+
+    .about_area{
+        padding-bottom: 50px !important;
+    }
+
+
+
+
+
+    /*new defined*/
+    #about_text{ /*About margin bottom*/  /*section_title text-center mb-80*/ /*Abount Event*/
+        margin-bottom: 0px !important; 
+    }
+    #event_deatils{
+        /* padding-bottom: 10px !important; */
+        margin-bottom: 20px !important;
+    }
+    
+    #rules{
+        margin-top: 20px !important;
+    }
+
+    .format_subsection{
+        margin-top: 10px !important;
+    }
+
+
+
+
+
+
+  /* Section spacing (balanced) */
+  #sponsors {
+    padding: 26px 8px;
+  }
+
+  /* Title refinement */
+  #sponsors .section-header h2 {
+    font-size: 22px;
+    margin-bottom: 16px;
+    text-align: center;
+    letter-spacing: 0.6px;
+  }
+
+  /* Cleaner vertical rhythm */
+  .sponsors-wrap {
+    row-gap: 14px;
+  }
+
+  /* Slightly tighter grid for bigger feel */
+  .sponsors-wrap .col-12 {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  /* Card - more premium feel */
+  .sponsor-logo {
+    border-radius: 16px; /* slightly smoother */
+    overflow: hidden;
+    background: #111;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.22);
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+  }
+
+  /* Image - slightly bigger + better feel */
+  .sponsor-logo img {
+    width: 100%;
+    height: 150px; /* + few more px */
+    object-fit: cover;
+    display: block;
+    transition: transform 0.2s ease, filter 0.2s ease;
+  }
+
+  /* Touch interaction (refined) */
+  .sponsor-logo:active {
+    transform: scale(0.97);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.35);
+  }
+
+  .sponsor-logo:active img {
+    transform: scale(1.02); /* slight inner zoom = premium feel */
+    filter: brightness(0.9);
+  }
+
+}

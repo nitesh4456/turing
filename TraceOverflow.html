@@ -30,6 +30,8 @@
     <link rel="stylesheet" href="css/slicknav.css">
     <link rel="stylesheet" href="css/footer.css">
 
+    <link rel="stylesheet" href="turingcss/css_change/new_events_styles.css">
+
     <style>
         .event-details-area {
             padding: 60px 0;
@@ -78,14 +80,6 @@
 </script>
 
 <body>
-    <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
-
-          <!-- Full-Screen Loader
-  <div class="loader-overlay">
-    <div class="loader"></div>
-</div> -->
 <!-- Loader -->
 <div class="loader-overlay" id="loader">
 
@@ -171,10 +165,10 @@
     <div class="about_area black_bg">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="section_title text-center mb-80">
+                <div class="col-lg-8 ">
+                    <div class="section_title text-center mb-80 " id="about_text">
                         <h3 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">About Trace Overflow</h3>
-                        <p class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s">A fast-paced coding
+                        <p class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s">
                         TraceOverflow is an indoor, sequential problem-solving event designed specifically for computer science students.
                         Participants solve a chain of technical tasks across various CS domains where the output of one step becomes the input for the next.
                         The event tests logical thinking, debugging ability, and structured problem-solving.
@@ -184,10 +178,10 @@
             </div>
             <!-- CODERUSH -->
             <div class="container event-details-area black_bg">
-                <div class="row justify-content-center">
+                <div class="row justify-content-center" >
                     <div class="col-lg-8">
-                        <div class="section_title text-center mb-5">
-                            <h3 class="text-white">Event Details</h3>
+                        <div class="section_title text-center mb-5" id="event_deatils">
+                            <h3 class="text-white"  >Event Details</h3>
                         </div>
                     </div>
                 </div>
@@ -212,7 +206,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-6">
+                    <div class="col-md-6" id="rules">
                         <h4 class="text-white"><i class="fa fa-list"></i> Rules & Guidelines</h4>
                         <ul class="text-muted">
                         <li>Participants must solve problems in the specified sequence.</li>
@@ -236,10 +230,7 @@
                                 <p>Jayesh Raj Neti</p>
                                 <p><i class="fa fa-phone"></i>8588858192</p>
                             </div>
-                            <!-- <div class="col-md-4">
-                                <p>Priyanshu Kumar Ghosh</p>
-                                <p><i class="fa fa-phone"></i> 8809620790</p>
-                            </div> -->
+                            
                         </div>
                     </div>
                 </div>
@@ -254,33 +245,24 @@
 
             <div class="container event-details-area black_bg">
                 <div class="row justify-content-center">
-                    <div class="col-lg-10">
+                    <div class="col-lg-10 ">
                         <div class="section_title text-center mb-5">
                             <h3 class="text-white">Format & Winning Criteria</h3>
                         </div>
                     </div>
 
-                    <div class="col-md-6">
+                    <div class="col-md-6 format_subsection">
                         <h4 class="text-white">Format</h4>
                         <ul class="text-muted">
-                            <!-- <li><strong>Total Rounds:</strong> 2</li>
-                            <li><strong>Duration:</strong> Each round is 30 minutes.</li>
-                            <li><strong>Platform:</strong> All participants must be registered on
-                                <strong>HackerRank</strong> prior to the competition.</li>
-                            <li><strong>Competition Mode:</strong></li> -->
+                            
                             <li>On-spot and digital problem solving event.</li>
                             <li>Participants must solve technical tasks sequentially.</li>
                             <li>Each answer unlocks the next step.</li>
-                            <!-- <ul>
-                                <li>Participants will be given a set of coding problems.</li>
-                                <li>The difficulty level will increase in the second round.</li>
-                                <li>The problems will be related to <span class="text-white">data structures </span>,
-                                    algorithms, and logical problem-solving**.</li>
-                            </ul> -->
+                            
                         </ul>
                     </div>
 
-                    <div class="col-md-6">
+                    <div class="col-md-6 format_subsection">
                     <h4 class="text-white">Device & Connectivity</h4>
                     <ul class="text-muted">
                     <li>Participants may use personal laptops or mobile devices.</li>
@@ -288,23 +270,14 @@
                     </ul>
                     </div>
 
-                    <div class="col-md-6">
+                    <div class="col-md-6 format_subsection">
                     <h4 class="text-white">Scoring System</h4>
                     <ul class="text-muted">
                     <li>No point-based scoring system.</li>
                     </ul>
                     </div>
 
-                    <!-- <div class="col-md-6">
-                        <h4 class="text-white">Winning Criteria</h4>
-                        <ul class="text-muted">
-                            <li>The <span class="text-white">participant</span> with the highest number of correctly
-                                solved problems wins.</li>
-                            <li>In case of a <span class="text-white">tie</span>, the participant with the <span
-                                    class="text-white">fastest submission time</span> will be declared the winner.</li>
-                        </ul>
-                    </div> -->
-                    <div class="col-md-6">
+                    <div class="col-md-6 format_subsection">
                     <h4 class="text-white">Winning Criteria</h4>
                     <ul class="text-muted">
                     <li>The first <span class="text-white">participant</span> to reach and correctly solve the final step will be declared the winner.</li>
@@ -533,8 +506,6 @@
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/tilt.jquery.js"></script>
     <script src="js/plugins.js"></script>
-
-
 
     <script src="js/main.js"></script>
 </body>

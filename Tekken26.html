@@ -9,7 +9,6 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- <link rel="manifest" href="site.webmanifest"> -->
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png" />
@@ -29,6 +28,8 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/slicknav.css">
     <link rel="stylesheet" href="css/footer.css">
+
+    <link rel="stylesheet" href="turingcss/css_change/new_events_styles.css">
 
     <style>
         .event-details-area {
@@ -78,14 +79,6 @@
 </script>
 
 <body>
-    <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
-
-          <!-- Full-Screen Loader
-  <div class="loader-overlay">
-    <div class="loader"></div>
-</div> -->
 <!-- Loader -->
 <div class="loader-overlay" id="loader">
 
@@ -172,7 +165,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
-                    <div class="section_title text-center mb-80">
+                    <div class="section_title text-center mb-80" id="about_text" >
                         <h3 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">About Tekken</h3>
                         <p class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s">
 Tekken is an intense one-on-one fighting tournament where participants compete using their favorite characters from the Tekken series. Players face off in head-to-head matches, showcasing their skills through powerful combos, defensive strategies, and quick reflexes. The competition follows an elimination format where winners advance to the next round until the final showdown determines the ultimate champion. Whether you're a seasoned fighter or a casual gamer, this event promises thrilling battles, competitive spirit, and an exciting esports atmosphere.                        </p>
@@ -183,7 +176,7 @@ Tekken is an intense one-on-one fighting tournament where participants compete u
             <div class="container event-details-area black_bg">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
-                        <div class="section_title text-center mb-5">
+                        <div class="section_title text-center mb-5" id="event_deatils">
                             <h3 class="text-white">Event Details</h3>
                         </div>
                     </div>
@@ -209,14 +202,6 @@ Tekken is an intense one-on-one fighting tournament where participants compete u
                         </div>
                     </div>
 
-                    <!-- <div class="col-md-6">
-                        <h4 class="text-white"><i class="fa fa-list"></i> Rules & Guidelines</h4>
-                        <ul class="text-muted">
-                            <li>Make sure you have a full squad duo and trio are not allowed </li>
-                            <li>ID level should be 30+ ~Rank should be Platinum V or above. </li>
-                            <li>only chargers, headgears and cooling gears are allowed, no other accessories are allowed. </li>
-                        </ul>
-                    </div> -->
                 </div>
 
                 <div class="row justify-content-center mt-4">
@@ -248,61 +233,6 @@ Tekken is an intense one-on-one fighting tournament where participants compete u
                 </div>
             </div>
 
-            <!-- <div class="container event-details-area black_bg">
-                <div class="row justify-content-center">
-                    <div class="col-lg-10">
-                        <div class="section_title text-center mb-5">
-                            <h3 class="text-white">Format & Winning Criteria</h3>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <h4 class="text-white">Format</h4>
-                        <ul class="text-muted">
-<li>1 Match(BR-Rank) in a custom room.           </li>              
-                    </ul>
-                    </div>
-
-                    <div class="col-md-6">
-                    <h4 class="text-white">Device & Connectivity</h4>
-                    <ul class="text-muted">
-<li>Use your Mobile data or bring your own network source. Don't rely on college for Wi-Fi. </li>
-<li>Try to carry your own extension board for charging and all</li>
-                    </ul>
-                    </div>
-
-                    <div class="col-md-6">
-                    <h4 class="text-white">Scoring System</h4>
-                    <ul class="text-muted">
-<li>The winning squad will acquire the first position and 2nd squad will acquire the runners up position. </li>
-                    </ul>
-                    </div>
-
-                    <div class="col-md-6">
-                    <h4 class="text-white">Winning Criteria</h4>
-                    <ul class="text-muted">
-<li>After all scheduled matches are completed, the player with the highest total points will be declared the tournament winner.</li>
-                    </ul>
-                    </div>
-
-                    <div class="col-md-6">
-                        <h4 class="text-white">Disqualification Criteria</h4>
-                        <ul class="text-muted">
-<li>If a player is caught using any third party application the whole team will be disqualified. </li>
-<li>if any team found doing a teamup team will be disqualified for that match no. point will be counted. </li>
-                        </ul>
-                    </div>
-
-                    <div class="col-md-6">
-                        <h4 class="text-white">Note</h4>
-                        <ul class="text-muted">
-<li>Participants are encouraged to bring their own laptops with a modern web browser (Chrome/Firefox).</li>
-<li>Basic knowledge of HTML, JavaScript, and web security concepts may be helpful but is not mandatory.</li>
-                        </ul>
-                    </div>
-
-                </div>
-            </div> -->
         </div>
     </div>
     <!-- about_area_end  -->
@@ -428,13 +358,6 @@ Tekken is an intense one-on-one fighting tournament where participants compete u
                         </div>
                     </a>
                 </div>
-                <!-- <div class="col-lg-4 col-md-6 col-12">
-                    <a href="Tekken.html">
-                        <div class="sponsor-logo">
-                            <img src="img/sponsors/tekken.png" class="img-fluid" alt="">
-                        </div>
-                    </a>
-                </div> -->
             </div>
         </div>
     </section>
@@ -523,11 +446,6 @@ Tekken is an intense one-on-one fighting tournament where participants compete u
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/tilt.jquery.js"></script>
     <script src="js/plugins.js"></script>
-
-
-
-    
-
 
 
     <script src="js/main.js"></script>

@@ -30,6 +30,8 @@
     <link rel="stylesheet" href="css/slicknav.css">
     <link rel="stylesheet" href="css/footer.css">
 
+    <link rel="stylesheet" href="turingcss/css_change/new_events_styles.css">
+
     <style>
         .event-details-area {
             padding: 60px 0;
@@ -78,14 +80,6 @@
 </script>
 
 <body>
-    <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
-
-          <!-- Full-Screen Loader
-  <div class="loader-overlay">
-    <div class="loader"></div>
-</div> -->
 <!-- Loader -->
 <div class="loader-overlay" id="loader">
 
@@ -172,9 +166,9 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
-                    <div class="section_title text-center mb-80">
-                        <h3 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">About Trace Overflow</h3>
-                        <p class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s">A fast-paced coding
+                    <div class="section_title text-center mb-80" id="about_text">
+                        <h3 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">About Tech Quizz</h3>
+                        <p class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s">
                         A fast-paced quiz competition designed to test participants’ knowledge of technology,
 gadgets, programming, and recent tech trends. Teams compete in three rounds
 that challenge their speed, accuracy, and technical awareness.
@@ -186,7 +180,7 @@ that challenge their speed, accuracy, and technical awareness.
             <div class="container event-details-area black_bg">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
-                        <div class="section_title text-center mb-5">
+                        <div class="section_title text-center mb-5" id="event_deatils">
                             <h3 class="text-white">Event Details</h3>
                         </div>
                     </div>
@@ -212,7 +206,7 @@ that challenge their speed, accuracy, and technical awareness.
                         </div>
                     </div>
 
-                    <div class="col-md-6">
+                    <div class="col-md-6" id="rules">
                         <h4 class="text-white"><i class="fa fa-list"></i> Rules & Guidelines</h4>
                         <ul class="text-muted">
                         <li>Participants must compete fairly without using internet or any external help.</li>
@@ -235,10 +229,6 @@ that challenge their speed, accuracy, and technical awareness.
                                 <p>Manushri Mandal</p>
                                 <p><i class="fa fa-phone"></i>7011874102</p>
                             </div>
-                            <!-- <div class="col-md-4">
-                                <p>Priyanshu Kumar Ghosh</p>
-                                <p><i class="fa fa-phone"></i> 8809620790</p>
-                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -259,7 +249,7 @@ that challenge their speed, accuracy, and technical awareness.
                         </div>
                     </div>
 
-                    <div class="col-md-6">
+                    <div class="col-md-6 format_subsection" >
                         <h4 class="text-white">Format</h4>
                         <ul class="text-muted">
                             <li><strong>Total Rounds:</strong> 3</li>
@@ -271,14 +261,14 @@ that challenge their speed, accuracy, and technical awareness.
                         </ul>
                     </div>
 
-                    <div class="col-md-6">
+                    <div class="col-md-6 format_subsection">
                     <h4 class="text-white">Device & Connectivity</h4>
                     <ul class="text-muted">
                     <li>A website will be used for the buzzer system, only one mobile or laptop per team is required.</li>
                     </ul>
                     </div>
 
-                    <div class="col-md-6">
+                    <div class="col-md-6 format_subsection">
                     <h4 class="text-white">Scoring System</h4>
                     <ul class="text-muted">
                     <li>Correct answer = +10 points</li>
@@ -286,14 +276,14 @@ that challenge their speed, accuracy, and technical awareness.
                     </ul>
                     </div>
 
-                    <div class="col-md-6">
+                    <div class="col-md-6 format_subsection">
                     <h4 class="text-white">Winning Criteria</h4>
                     <ul class="text-muted">
                     <li>The <span class="text-white">team</span> with the highest total score at the end of all rounds will be declared the winner.</li>
                     </ul>
                     </div>
 
-                    <div class="col-md-6">
+                    <div class="col-md-6 format_subsection">
                         <h4 class="text-white">Disqualification Criteria</h4>
                         <ul class="text-muted">
                         <li>The <span class="text-white">team</span> with the highest total score at the end of all rounds will be declared the winner.</li>
@@ -340,10 +330,6 @@ that challenge their speed, accuracy, and technical awareness.
                             <div class="single_brand text-center">
                                 <a href="https://helalabs.com/"><img src="img/brand/hela.png" alt=""></a>
                             </div>
-
-
-
-
 
                             <!-- <div class="single_brand text-center">
                                 <a href="https://stractsbyriya.com/"><img src="img/brand/2.png" alt=""></a>
@@ -395,13 +381,7 @@ that challenge their speed, accuracy, and technical awareness.
                         </div>
                     </a>
                 </div>
-                <!-- <div class="col-lg-4 col-md-6 col-12">
-                    <a href="TechQuizz.html">
-                        <div class="sponsor-logo">
-                            <img src="img/sponsors/tech_quiz.png" class="img-fluid" alt="">
-                        </div>
-                    </a>
-                </div> -->
+                
                 <div class="col-lg-4 col-md-6 col-12">
                     <a href="HuntX.html">
                         <div class="sponsor-logo">
@@ -525,12 +505,6 @@ that challenge their speed, accuracy, and technical awareness.
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/tilt.jquery.js"></script>
     <script src="js/plugins.js"></script>
-
-
-
-    
-
-
 
     <script src="js/main.js"></script>
 </body>
